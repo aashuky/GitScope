@@ -12,7 +12,7 @@ import {
   Trash2,
 } from "lucide-react";
 import { useState, useEffect } from "react";
-import { accents } from "../constants/Accents";
+import { accents } from "../constants/accents.js";
 
 const themes = [
   { id: "dark", label: "Dark", Icon: Moon },
