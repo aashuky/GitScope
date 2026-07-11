@@ -92,10 +92,19 @@ gitscope/
 ## 📸 Screenshots
 
 ### Home
-![Home](./screenshots/home.png)
+![Home](./screenshots/Home.png)
+
+### Repositories
+![Repositories](./screenshots/Repos.png)
+
+### Compare
+![Compare](./screenshots/Compare.png)
+
+### Quick Actions
+![Quick Actions](./screenshots/Quick.png)
 
 ### Settings
-![Settings](./screenshots/settings.png)
+![Settings](./screenshots/Settings.png)
 
 ---
 
