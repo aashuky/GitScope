@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
-import { accents } from "./constants/Accents";
+import { accents } from "../src/constants/accents";
 
 import SplashScreen from "./components/SplashScreen";
 import Navbar from "./components/Navbar";
