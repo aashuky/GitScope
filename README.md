@@ -34,8 +34,6 @@
 - **API:** GitHub REST API
 - **Deployment:** Vercel
 
-> Edit this section to match your actual stack (e.g. Next.js, TypeScript, GraphQL API, etc.)
-
 ---
 
 ## 🚀 Getting Started
@@ -91,10 +89,6 @@ gitscope/
 └── README.md
 ```
 
-> Adjust this to reflect your actual folder structure.
-
----
-
 ## 📸 Screenshots
 
 ### Home
@@ -110,16 +104,8 @@ gitscope/
 **Aashish Kumar Yadav**
 2nd Year CS Student, LNCT&S Bhopal
 
-- GitHub: [@your-username](https://github.com/your-username)
-- LinkedIn: [your-linkedin](https://linkedin.com)
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
+- GitHub: https://github.com/aashuky
+- LinkedIn: https://www.linkedin.com/in/aashish-kumar-yadav-363700372/
 
 ## 🙏 Acknowledgements
 
