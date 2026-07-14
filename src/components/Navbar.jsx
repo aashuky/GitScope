@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Moon, Sun, Search, Menu, X, Monitor } from "lucide-react";
 import logo from "../assets/GitScope-icon.png";
 import { FaGithub } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const nextTheme = { dark: "light", light: "system", system: "dark" };
 const themeIcon = {

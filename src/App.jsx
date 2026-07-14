@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import { accents } from "../src/constants/accents";
+import toast, { Toaster } from "react-hot-toast";
 
 import SplashScreen from "./components/SplashScreen";
 import Navbar from "./components/Navbar";
@@ -205,6 +206,8 @@ const App = () => {
     return user;
   }, []);
 
+  
+
   const handleLandingSearch = async (login) => {
     setLandingLoading(true);
     setLandingError("");
@@ -214,21 +217,18 @@ const App = () => {
       setAppReady(true);
     } catch (err) {
       console.error(err);
-      setLandingError(
-        "User not found. Please check the username and try again.",
-      );
+      toast.error("User not found. Please check the username and try again.");
       setUserData(null);
     } finally {
       setLandingLoading(false);
     }
   };
-
-  const handleNavbarSearch = async (login) => {
+   const handleNavbarSearch = async (login) => {
     try {
       await loadUser(login);
     } catch (err) {
       console.error(err);
-      alert("GitHub user not found.");
+      toast.error("GitHub user not found.");
       setUserData(null);
       setRepos([]);
       setActivity([]);
@@ -243,6 +243,16 @@ const App = () => {
       <ScrollToTop />
       <RouteMemory />
       <InitialRedirect />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            background: "var(--bg-secondary, #1a1a1a)",
+            color: "var(--text-primary, #fff)",
+            border: "1px solid var(--accent-from, #8b5cf6)",
+          },
+        }}
+      />
       <div className={`app${compactView ? " compact" : ""}`}>
         <Navbar
           fetchUser={handleNavbarSearch}
