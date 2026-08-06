@@ -46,7 +46,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/gitscope.git
+git clone https://github.com/aashuky/gitscope.git
 
 # Navigate to project directory
 cd gitscope
