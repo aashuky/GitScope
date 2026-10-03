@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+const TOKEN = import.meta.env.GITHUB_TOKEN;
 const HEADERS = TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {};
 export const hasToken = Boolean(TOKEN);
 

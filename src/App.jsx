@@ -19,7 +19,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import RouteMemory from "./components//routing/RouteMemory";
 import InitialRedirect from "./components/routing/InitialRedirect";
 
-const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+const TOKEN = import.meta.env.GITHUB_TOKEN;
 const HEADERS = TOKEN ? { Authorization: `Bearer ${TOKEN}` } : {};
 const hasToken = Boolean(TOKEN);
 

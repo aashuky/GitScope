@@ -10,7 +10,7 @@ const ContributionGraph = ({ userData, hasToken }) => {
   const containerRef = useRef(null);
   const cellRefs = useRef({});
 
-  const TOKEN = import.meta.env.VITE_GITHUB_TOKEN;
+  const TOKEN = import.meta.env.GITHUB_TOKEN;
 
   useEffect(() => {
     if (!hasToken || !userData?.login) {
@@ -113,7 +113,7 @@ const ContributionGraph = ({ userData, hasToken }) => {
     return (
       <Empty
         icon={<KeyRound size={32} className="empty-icon" />}
-        text="Add VITE_GITHUB_TOKEN to your .env to unlock the contribution graph."
+        text="Add GITHUB_TOKEN to your .env to unlock the contribution graph."
       />
     );
 
